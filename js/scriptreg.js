@@ -24,7 +24,7 @@ function saveCookie() {
         document.cookie = "userName=" + inputs1.value + ";expires=" + d;
         document.cookie = "email=" + inputs2.value + ";expires=" + d;
         document.cookie = "password=" + inputs3.value + ";expires=" + d;
-        window.open("./Home.html", "_self")
+        window.open("./index.html", "_self")
 
     }
 
@@ -53,7 +53,7 @@ function getCookie() {
         obj[arr[0].trim()] = arr[1];
     }
     if (obj.email === inputEmail.value && obj.password === inputpass.value) {
-        window.open("./Home.html", "_self")
+        window.open("./index.html", "_self")
         alert("welcome " + obj.userName)
         document.getElementsByTagName("span")[0].textContent = obj.userName + obj.password
 
